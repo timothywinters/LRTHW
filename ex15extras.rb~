@@ -8,4 +8,13 @@ txt = File.open(filename)
 puts "Here's your file: #{filename}"
 #actually shows file
 puts txt.read()
-STDIN.gets.chomp()
+#asks again for file 
+puts "I'll also ask you to type it again:"
+#prompt to get file name
+print prompt
+#Variable for filename - return
+file_again = STDIN.gets.chomp()
+#puts file again and opens it
+txt_again = File.open(file_again)
+#puts file
+puts txt_again.read()
